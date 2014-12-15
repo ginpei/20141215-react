@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>React</title>
+	</head>
+	<body>
+		<script src="http://fb.me/react-0.12.1.js"></script>
+		<script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
+		<script type="text/jsx">
+			var Example = React.createClass({
+				render: function() {
+					return <h1>{this.props.message}</h1>
+				}
+			});
+
+			React.render(
+				<Example message="Hello, world!" />,
+				document.querySelector('body')
+			);
+		</script>
+	</body>
+</html>
